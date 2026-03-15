@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Mustafa MKII</title>
+
+    <style>
+        body {
+            background: black;
+            color: #00ff00;
+            font-family: monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-size: 40px;
+        }
+
+        .text {
+            border-right: 3px solid #00ff00;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: typing 4s steps(20) infinite alternate, blink 0.7s infinite;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0
+            }
+
+            to {
+                width: 12ch
+            }
+        }
+
+        @keyframes blink {
+            50% {
+                border-color: transparent
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="text">mustafa mkii</div>
+
+</body>
+</html>
