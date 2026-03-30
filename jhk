@@ -22,7 +22,16 @@ void showTasks() {
 }
 
 
-
+void deleteTask() {
+    int num;
+    cout << "Enter task number to delete: ";
+    cin >> num;
+    if (num > 0 && num <= tasks.size()) {
+        tasks.erase(tasks.begin() + num - 1);
+    } else {
+        cout << "Invalid number!\n";
+    }
+}
 int main() {
     int choice;
     while (true) {
